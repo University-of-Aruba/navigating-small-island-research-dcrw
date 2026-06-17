@@ -5,7 +5,7 @@ digraph NavigatingResearchRealiltiesOnASmallIslandFlowGraph {
   d01   [label="expected sample availability low?"];
   n02   [label="(re)define general hypothesis"];
   n03   [label="(re)set min sample size"];
-  d02   [label="repeated session or longitudinal study?"];
+  d02   [label="any repeated session or longitudinal study uncertainty?"];
   n04   [label="(re)define personal/contextual hypothesis"];
   n05   [label="(re)set max sample size"];
   d03   [label="expected sample quality low?"];
