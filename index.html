@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navigating Small Island Research Realities</title>
+    <meta
+      name="description"
+      content="A static decision navigator for planning small island research from a DOT flow graph."
+    >
+    <link rel="icon" type="image/svg+xml" href="sisstem-logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Navigating Small Island Research Realities home">
+        <img class="brand-logo" src="sisstem-logo.svg" alt="SISSTEM logo">
+        <span>Navigating Small Island Research Realities</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="navigator-shell" aria-labelledby="page-title">
+        <div class="hero-panel">
+          <img src="assets/spaghetti-curves.svg" alt="" aria-hidden="true">
+        </div>
+
+        <div class="tool-panel">
+          <div class="intro">
+            <h1 id="page-title">Navigating Small Island Research Realities</h1>
+          </div>
+
+          <section class="step-card" aria-live="polite" aria-labelledby="step-title">
+            <div class="step-meta">
+              <span id="step-kind">Loading</span>
+              <span id="progress-label">0 decisions</span>
+            </div>
+            <h2 id="step-title">Loading flow graph</h2>
+            <div id="choice-panel" class="choice-panel"></div>
+            <div class="control-row">
+              <button id="back-button" class="secondary-button" type="button">Back</button>
+              <button id="restart-button" class="secondary-button" type="button">Restart</button>
+            </div>
+          </section>
+
+          <aside class="history-panel" aria-labelledby="history-title">
+            <h2 id="history-title">Path History</h2>
+            <ol id="history-list"></ol>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>MIT-licensed code.</p>
+      <p>
+        This tool is part of the talk "Navigating Research Realities on a Small Island:
+        Lessons from a PhD Healthcare Project on Aruba" by Laclé, F. and Sultan S. for the
+        DCRW 2026.
+      </p>
+    </footer>
+  </body>
+</html>

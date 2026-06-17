@@ -1,0 +1,14 @@
+{
+  "name": "navigating-small-island-research-dcrw",
+  "version": "0.1.0",
+  "description": "Static GitHub Pages navigator for small island research planning decisions.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "check": "npm run check:syntax && npm run check:graph",
+    "check:syntax": "node --check app.js && node --check scripts/validate-graph.mjs",
+    "check:graph": "node scripts/validate-graph.mjs",
+    "smoke": "node scripts/smoke-test.mjs"
+  }
+}
