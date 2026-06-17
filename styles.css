@@ -60,7 +60,7 @@ a:focus-visible {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 24px;
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
@@ -83,6 +83,42 @@ a:focus-visible {
   width: 52px;
   height: auto;
   flex: 0 0 auto;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 8px;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid rgba(0, 93, 99, 0.24);
+  border-radius: 8px;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 780;
+  line-height: 1.1;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.68);
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.github-link:hover {
+  color: var(--teal-dark);
+  border-color: rgba(0, 93, 99, 0.48);
+  background: #ffffff;
+  transform: translateY(-1px);
+}
+
+.github-icon {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  fill: currentColor;
 }
 
 main {
@@ -386,9 +422,11 @@ h1 {
 @media (max-width: 860px) {
   .site-header {
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   .brand {
+    flex: 1 1 260px;
     font-size: 0.9rem;
   }
 
@@ -433,6 +471,11 @@ h1 {
   .brand-logo {
     width: 46px;
     height: auto;
+  }
+
+  .github-link {
+    width: 100%;
+    justify-content: center;
   }
 
   .tool-panel {

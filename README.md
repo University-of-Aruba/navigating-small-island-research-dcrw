@@ -2,7 +2,7 @@
 
 Static GitHub Pages decision navigator for planning research under small island constraints. The public interface reads `flowgraph.dot` at runtime and presents the graph as a compact yes/no path.
 
-Version: `0.1.0`.
+Version: `0.1.1`.
 
 ## Repository Structure
 
@@ -29,6 +29,8 @@ python3 -m http.server 4173
 Then open `http://localhost:4173/`.
 
 ## GitHub Pages
+
+Public site: https://university-of-aruba.github.io/navigating-small-island-research-dcrw/
 
 GitHub Pages can serve this site from the repository root on the `main` branch. Required repository setup after GitHub publication:
 

@@ -1,6 +1,6 @@
 {
   "name": "navigating-small-island-research-dcrw",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Static GitHub Pages navigator for small island research planning decisions.",
   "type": "module",
   "private": false,
